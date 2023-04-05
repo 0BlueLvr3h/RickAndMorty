@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.container * {
+  box-sizing: border-box; 
+}
+
+.text{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name{
+  color: red;
+  font-weight: bolder;
+}
+
+.container img{
+  height: 175px;
+  border: solid 1px black;
+}
+
+.text p {
+  margin: 0 0 10px; 
+  line-height: 2; 
+  font-weight: bold;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.custom-col {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.custom-card {
+  height: 400px; /* Altezza fissa per tutte le card */
+  overflow: hidden; /* Per nascondere il testo che eccede l'altezza della card */
+}
+
+.text > div {
+  margin-top: auto;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  height: 175px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+  padding: 10px;
+}
+

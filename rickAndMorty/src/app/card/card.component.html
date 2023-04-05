@@ -1,0 +1,21 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  </head>
+  
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let character of characters" class="col-12 col-sm-6 col-md-4 col-lg-3 custom-col mb-4">
+        <div class="card">
+          <img class="card-img-top" id="{{character.id}}" src="{{character.image}}" alt="RickAndMorty">
+          <div class="card-body">
+            <h5 class="card-title text-center name">{{character.name}}</h5>
+            <div class="text-center">
+              <p class="card-text"><b>Species:</b> {{character.species}}</p>
+              <p class="card-text"><b>Status:</b> {{character.status}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
