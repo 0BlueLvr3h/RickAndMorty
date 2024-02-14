@@ -16,6 +16,7 @@ export class CharacterService {
   getAll(page:number) : Observable<any>{
     return this.http.get<any>(this.url + "?page="+ page).pipe(
       map(data => {
+        console.log(data);
         return data.results;
       })
     );

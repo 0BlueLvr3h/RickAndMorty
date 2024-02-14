@@ -26,6 +26,8 @@ constructor(private characterService : CharacterService){
         this.isVisible = true;
         this.character = character;
 
+        
+
         for(let episode of this.character.episode){
           this.characterService.getEpisode(episode).subscribe(episode =>{
             this.episode = episode;
